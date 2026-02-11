@@ -57,8 +57,10 @@ class RescueAgent(Agent):
 
 if __name__ == "__main__":
     agent = RescueAgent(
-        "max_rescue_agent@xmpp.jp",
+        "rescue_agent_max@xmpp.jp",
         "xdedse"
     )
 
-    asyncio.run(agent.start())
+
+
+asyncio.run(agent.start())
