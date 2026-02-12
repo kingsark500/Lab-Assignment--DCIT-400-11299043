@@ -13,7 +13,7 @@ class SensorBehaviour(PeriodicBehaviour):
         if severity >= 7:
             print("[ALERT] Critical disaster detected. Sending INFORM message.")
 
-            msg = Message(to="rescue403@xmpp.jp")
+            msg = Message(to="rescue_agent_max@xmpp.jp")
             msg.set_metadata("performative", "inform")
             msg.body = f"CRITICAL_SEVERITY:{severity}"
 
